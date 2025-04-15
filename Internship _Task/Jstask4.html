@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2>Task 4</h2>
+   <p id="demo">Print all the multipiction table with number from 2 to 10</p>
+   <script>
+    
+   let text=" ";
+   for(let i=2;i<=10;i++)
+   { 
+    text+= `Multiplication table of ${i} `+"<br>";
+     console.log(`Multiplication table of ${i}`);
+    for(let j=1;j<=10;j++)
+   { 
+    text+=`  ${i}x${j}=${i*j}`+"<br>";
+    console.log(`${i}x${j}=${i*j}`);
+   }
+   
+   }
+    document.getElementById("demo").innerHTML=text;
+
+   </script>
+</body>
+</html>

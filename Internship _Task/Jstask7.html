@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task 7</h1>
+    <h2>Calulate the sum of odd number grater than 10 and less than 30.</h2>
+    <p id="demo"></p>
+    <script>
+    let num=0;
+    for(let i=11;i<30;i++)
+    {
+       if(i%2!==0){
+        num+=i;
+       }
+    }
+    console.log(num);
+   document.getElementById("demo").innerHTML= ` The Sum of odd numbers greater than 10 and less than 30 is = ${num}`;
+    </script>
+</body>
+</html>

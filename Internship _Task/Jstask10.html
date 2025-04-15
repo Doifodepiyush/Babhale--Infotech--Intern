@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Task 10</h1>
+   <h2>Create a function that receive an array of number and return an array containing only positive number(take minimum 10 elements containing at least 4 negative number) </h2>
+   <p id="fun"></p>
+   <script>
+   let numbers = [12, -5, 7, -3, 22, -10, 8, -1, 15, 4];
+    
+    let newarray=numbers.filter((val)=>{
+        return val>0 ;
+    } );
+    console.log(numbers);
+   console.log(newarray);
+   document.getElementById("fun").innerHTML=`Array containing positive number = ${newarray.join(",")}`;
+   </script> 
+</body>
+</html>
